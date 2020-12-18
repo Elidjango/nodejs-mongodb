@@ -18,4 +18,4 @@ after installing the packages we proceed to configure dotenv in the .env file
 $ npm run start:dev
 ```
 
-_Developer_ *@EliDjangoDev*
+_Developer_ **@EliDjangoDev**
