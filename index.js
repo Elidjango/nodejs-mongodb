@@ -20,6 +20,7 @@ dbConnect();
 APP.use(CORS());
 
 // - Routers:
+APP.use('/api/test', require('./router/test.router'));
 
 // - Listen server:
 let _port;
