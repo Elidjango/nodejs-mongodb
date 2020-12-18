@@ -1,14 +1,21 @@
 # NODEJS + MONGODB (MONGOOSE)
 
-* - Remember when downloading install the packages in this way.
+* Clone
+```
+$ git clone https://github.com/Elidjango/nodejs-mongodb.git
+$ cd nodejs-mongodb
+```
+
+* Install Package
 ```
 $ npm install --save --force
 ```
 
-* - now we run it with the following command.
+after installing the packages we proceed to configure dotenv in the .env file
+
+* Run API
 ```
 $ npm run start:dev
 ```
 
-_Developer_
-@EliDjangoDev
+_Developer_ *@EliDjangoDev*
