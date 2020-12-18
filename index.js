@@ -1,11 +1,20 @@
 const EXPRESS = require('express');
 const APP = EXPRESS();
 
-// Cors:
+// - VARIABLE GLOBALS
+global.ModeRUN = 1; // 1 = dev; 2 = production;
 
-// Routers:
+// - Imports
+const { dbConnect } = require('./database/config.database');
 
-// Run server:
+// - DataBase:
+dbConnect();
+
+// - Cors:
+
+// - Routers:
+
+// - Listen server:
 APP.listen(3000, () => {
     console.log(`Run port localhost:3000`);
 });
