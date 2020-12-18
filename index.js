@@ -1,5 +1,10 @@
-const EXPRESS = require('express');
+// DOTENV
 require('dotenv').config();
+
+const EXPRESS = require('express');
+const CORS = require('cors');
+
+// Create serve
 const APP = EXPRESS();
 
 // - VAR:GLOBALS
@@ -12,6 +17,7 @@ const { dbConnect } = require('./database/config.database');
 dbConnect();
 
 // - Cors:
+APP.use(CORS());
 
 // - Routers:
 
