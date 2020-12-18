@@ -1,0 +1,14 @@
+{
+    "name": "nodejs-mongodb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "start",
+    "scripts": {
+        "start:dev": "nodemon index.js"
+    },
+    "author": "EliDjangoDev@gmail.com",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
