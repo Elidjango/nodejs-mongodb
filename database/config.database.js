@@ -1,11 +1,10 @@
 const MONGOOSE = require('mongoose');
-const _NAMEDB_ = "my_test";
 let _config;
 
 if (global.ModeRUN === 1) {
-    _config = `mongodb://localhost:27017/${_NAMEDB_}`;
+    _config = `mongodb://${process.env.HOST_DEV}/${process.env.NAMEDB_DEV}`;
 } else if (global.ModeRUN === 2) {
-    _config = `mongodb+srv://${_USERNAME_}:${_PASSWORD_}@${_HOST_}/${_NAMEDB_}`;
+    _config = `mongodb+srv://${process.env.USERNAME_PROD}:${process.env.PASSWORD_PROD}@${process.env.HOST_PROD}/${process.env.NAMEDB_PROD}`;
 }
 
 const dbConnect = async() => {
