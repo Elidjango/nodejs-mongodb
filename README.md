@@ -2,7 +2,7 @@
 
 * Clone
 ```
-$ git clone https://github.com/Elidjango/nodejs-mongodb.git
+$ git clone https://github.com/LoretoEliel/nodejs-mongodb.git
 $ cd nodejs-mongodb
 ```
 
